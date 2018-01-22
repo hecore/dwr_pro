@@ -1,0 +1,17 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://www.getahead.ltd.uk/dwr/dwr20.dtd">
+//整个配置文件的大体结构如下：
+<dwr>
+	<init>
+		<creator id="..." class="..." />
+		<converter id="..." class="..." />
+	</init>
+	<allow>
+		<create creator="..." javascript="..." scope="...">
+			<param name="..." value="..." />
+		</create>
+		<convert convertor="..." match="..." />
+	</allow>
+
+</dwr>

@@ -1,0 +1,26 @@
+http://blog.csdn.net/xiaoxian8023/article/details/25064585
+
+
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://www.getahead.ltd.uk/dwr/dwr20.dtd">
+//整个配置文件的大体结构如下：
+<dwr>
+  <init>
+    <creator id="..." class="..."/>
+    <converter id="..." class="..."/>
+  </init>
+  <allow>
+    <create creator="..." javascript="..." scope="...">
+      <param name="..." value="..."/>
+    </create>
+    <convert convertor="..." match="..."/>
+  </allow>
+  <signatures>
+    ...
+  </signatures>
+</dwr>
+
+详细说明：
+<init> 部分声明那些用于建立远程bean和在方法调用中转换bean的类.这部分是可选择性配置的，如果你想定义一个新的creator（创造器）或者converter（转换器），那么就必须在部分中声明，每个creator和converter需要有个id属性来允许以后进行引用。
+ <allow> 部分定义了DWR能够创建和转换的类，以供 javascript 访问。
